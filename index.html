@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>你的名字 | 个人名片</title>
+    <meta
+      name="description"
+      content="你的名字的个人主页，包含职业介绍、微信和邮箱联系方式。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <main class="page-shell">
+      <section class="card" aria-labelledby="profile-name">
+        <div class="visual-grid" aria-hidden="true">
+          <span class="grid-node node-a"></span>
+          <span class="grid-node node-b"></span>
+          <span class="grid-node node-c"></span>
+          <span class="vector vector-one"></span>
+          <span class="vector vector-two"></span>
+        </div>
+
+        <div class="status-row">
+          <span class="signal"></span>
+          <span>Open for connection</span>
+        </div>
+
+        <div class="identity">
+          <p class="eyebrow">Personal Card</p>
+          <h1 id="profile-name">你的名字</h1>
+          <p class="role">你的职业</p>
+          <p class="intro">
+            专注于把复杂想法整理成清晰、可靠、有质感的数字体验。
+          </p>
+        </div>
+
+        <div class="contact-panel" aria-label="联系方式">
+          <a class="contact-link primary" href="mailto:your.email@example.com">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path
+                  d="M4 6.75A2.75 2.75 0 0 1 6.75 4h10.5A2.75 2.75 0 0 1 20 6.75v10.5A2.75 2.75 0 0 1 17.25 20H6.75A2.75 2.75 0 0 1 4 17.25V6.75Zm2.2-.25 5.2 4.35c.38.32.82.32 1.2 0L17.8 6.5H6.2Zm12.3 1.66-4.54 3.8a3.1 3.1 0 0 1-3.92 0L5.5 8.16v9.09c0 .41.34.75.75.75h11.5c.41 0 .75-.34.75-.75V8.16Z"
+                />
+              </svg>
+            </span>
+            your.email@example.com
+          </a>
+          <button class="contact-link" type="button" data-wechat-trigger>
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path
+                  d="M9.2 4.5c-4 0-7.2 2.55-7.2 5.7 0 1.78 1.02 3.37 2.62 4.42l-.62 2.2 2.45-1.28c.84.25 1.76.39 2.72.39.18 0 .36 0 .54-.02-.13-.45-.2-.92-.2-1.41 0-3.03 2.9-5.5 6.48-5.5.25 0 .5.01.74.04-.68-2.55-3.56-4.54-7.53-4.54Zm-2.32 4.1a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8Zm4.64 0a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8Zm4.47 1.1c-3 0-5.44 1.93-5.44 4.32 0 2.38 2.44 4.31 5.44 4.31.7 0 1.38-.1 2-.3l2.01 1.05-.5-1.8c1.27-.8 2.07-2.02 2.07-3.38 0-2.38-2.44-4.3-5.58-4.3Zm-1.7 3.15a.73.73 0 1 1 0 1.46.73.73 0 0 1 0-1.46Zm3.55 0a.73.73 0 1 1 0 1.46.73.73 0 0 1 0-1.46Z"
+                />
+              </svg>
+            </span>
+            WeChat ID
+          </button>
+        </div>
+
+        <div class="wechat-popover" role="status" aria-live="polite" data-wechat-popover>
+          <span>微信号</span>
+          <strong>WeChat ID</strong>
+          <small>后续可替换为二维码或真实微信号</small>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
